@@ -1,0 +1,149 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.4.4/schema.json",
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "es5",
+			"semicolons": "asNeeded"
+		}
+	},
+	"assist": { "actions": { "source": { "organizeImports": "off" } } },
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 100,
+		"includes": [
+			"**",
+			"!**/node_modules/**",
+			"!**/dist/**",
+			"!**/tsconfig.json",
+			"!**/jsconfig.json"
+		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off",
+				"noBannedTypes": "off",
+				"useOptionalChain": "off",
+				"noStaticOnlyClass": "off",
+				"useSimplifiedLogicExpression": "off",
+				"noUselessStringConcat": "warn",
+				"useDateNow": "error",
+				"noUselessUndefinedInitialization": "error",
+				"noFlatMapIdentity": "error",
+				"noUselessUndefined": "error"
+			},
+			"correctness": {
+				"useValidTypeof": "off",
+				"useImportExtensions": "off",
+				"noUndeclaredDependencies": "off",
+				"noUnusedFunctionParameters": "warn",
+				"noInvalidBuiltinInstantiation": "error",
+				"noInvalidDirectionInLinearGradient": "error",
+				"noInvalidPositionAtImportRule": "error",
+				"noUnknownMediaFeatureName": "error",
+				"noUnmatchableAnbSelector": "error",
+				"noUnusedImports": "error",
+				"noUnknownFunction": "error",
+				"noUnknownProperty": "error",
+				"noUnknownUnit": "error",
+				"noInvalidGridAreas": "error",
+				"noUnknownPseudoElement": "error",
+				"useExhaustiveDependencies": "error",
+				"noGlobalDirnameFilename": "error"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noCatchAssign": "off",
+				"noExplicitAny": "off",
+				"noPrototypeBuiltins": "off",
+				"noEmptyBlock": "warn",
+				"noEvolvingTypes": "warn",
+				"noMisplacedAssertion": "warn",
+				"noRedeclare": "warn",
+				"useErrorMessage": "error",
+				"noDuplicateFontNames": "error",
+				"noAssignInExpressions": "error",
+				"noImportantInKeyframe": "error",
+				"noDuplicateAtImportRules": "error",
+				"noShorthandPropertyOverrides": "error",
+				"useNumberToFixedDigitsArgument": "error",
+				"noDuplicateSelectorsKeyframeBlock": "error",
+				"noExtraNonNullAssertion": "error",
+				"noDuplicateDependencies": "error"
+			},
+			"style": {
+				"useConst": "off",
+				"noNonNullAssertion": "off",
+				"useExplicitLengthCheck": "off",
+				"useConsistentArrowReturn": "off",
+				"noParameterProperties": "warn",
+				"noRestrictedGlobals": "warn",
+				"noShoutyConstants": "warn",
+				"useFragmentSyntax": "warn",
+				"useExponentiationOperator": "warn",
+				"useConsistentArrayType": { "level": "warn", "options": { "syntax": "shorthand" } },
+				"noProcessEnv": "error",
+				"noDoneCallback": "error",
+				"noDefaultExport": "error",
+				"useThrowNewError": "error",
+				"useArrayLiterals": "error",
+				"noYodaExpression": "error",
+				"useThrowOnlyError": "error",
+				"useComponentExportOnlyModules": "error",
+				"useConsistentBuiltinInstantiation": "error"
+			},
+			"performance": {
+				"noDelete": "warn",
+				"useTopLevelRegex": "error"
+			},
+			"a11y": {
+				"noRedundantAlt": "error",
+				"noSvgWithoutTitle": "error",
+				"useGenericFontNames": "error",
+				"useSemanticElements": "error",
+				"noLabelWithoutControl": "error",
+				"useFocusableInteractive": "error",
+				"noInteractiveElementToNoninteractiveRole": "error"
+			},
+			"security": {},
+			"nursery": {}
+		},
+		"includes": [
+			"**",
+			"!**/node_modules/**",
+			"!**/dist/**",
+			"!**/tsconfig.json",
+			"!**/jsconfig.json"
+		]
+	},
+	"overrides": [
+		{
+			"includes": ["scripts/**", "src/**/config/**", "tsup.config.ts", "vite.config.ts"],
+			"linter": {
+				"rules": {
+					"style": {
+						"noProcessEnv": "off",
+						"noDefaultExport": "off"
+					}
+				}
+			}
+		},
+		{
+			"includes": ["src/types/**/*.d.ts"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "off"
+					}
+				}
+			}
+		}
+	]
+}
