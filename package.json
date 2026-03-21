@@ -1,23 +1,31 @@
 {
-  "name": "@snowdrive/biome-config",
-  "version": "1.0.0",
-  "author": "Luciano Morales",
-  "description": "Common biomejs config used in my projects",
-  "license": "MIT",
-  "private": false,
-  "keywords": [
-    "biome",
-    "linter",
-    "formatter",
-    "config"
-  ],
-  "files": [
-    "biome.json"
-  ],
-  "peerDependencies": {
-    "@biomejs/biome": ">=2.4.4"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.4.4"
-  }
+	"name": "@snowdrive/biome-config",
+	"version": "1.1.0",
+	"author": "Luciano Morales",
+	"description": "Common biomejs config used in my projects",
+	"license": "MIT",
+	"private": false,
+	"publishConfig": {
+		"access": "public",
+		"tag": "latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/luc-mo/biome-config.git"
+	},
+	"keywords": [
+		"biome",
+		"linter",
+		"formatter",
+		"config"
+	],
+	"files": [
+		"biome.json"
+	],
+	"peerDependencies": {
+		"@biomejs/biome": ">=2.4.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.4"
+	}
 }

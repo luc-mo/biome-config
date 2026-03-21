@@ -125,7 +125,12 @@
 	},
 	"overrides": [
 		{
-			"includes": ["scripts/**", "src/**/config/**", "tsup.config.ts", "vite.config.ts"],
+			"includes": [
+				"./**/scripts/**",
+				"./**/config/**",
+				"./**/tsup.config.ts",
+				"./**/vite.config.ts"
+			],
 			"linter": {
 				"rules": {
 					"style": {
