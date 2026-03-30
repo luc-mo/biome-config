@@ -43,6 +43,7 @@
 				"useValidTypeof": "off",
 				"useImportExtensions": "off",
 				"noUndeclaredDependencies": "off",
+				"useExhaustiveDependencies": "off",
 				"noUnusedFunctionParameters": "warn",
 				"noInvalidBuiltinInstantiation": "error",
 				"noInvalidDirectionInLinearGradient": "error",
@@ -55,7 +56,6 @@
 				"noUnknownUnit": "error",
 				"noInvalidGridAreas": "error",
 				"noUnknownPseudoElement": "error",
-				"useExhaustiveDependencies": "error",
 				"noGlobalDirnameFilename": "error"
 			},
 			"suspicious": {

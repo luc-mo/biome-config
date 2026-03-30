@@ -1,6 +1,6 @@
 {
 	"name": "@snowdrive/biome-config",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"author": "Luciano Morales",
 	"description": "Common biomejs config used in my projects",
 	"license": "MIT",
