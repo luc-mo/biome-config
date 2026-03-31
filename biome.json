@@ -42,6 +42,7 @@
 			"correctness": {
 				"useValidTypeof": "off",
 				"useImportExtensions": "off",
+				"noUnknownPseudoClass": "off",
 				"noUndeclaredDependencies": "off",
 				"useExhaustiveDependencies": "off",
 				"noUnusedFunctionParameters": "warn",
