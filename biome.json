@@ -64,6 +64,7 @@
 				"noCatchAssign": "off",
 				"noExplicitAny": "off",
 				"noPrototypeBuiltins": "off",
+				"useIterableCallbackReturn": "off",
 				"noEmptyBlock": "warn",
 				"noEvolvingTypes": "warn",
 				"noMisplacedAssertion": "warn",
